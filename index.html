@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="audioPlayer">
+            <div class="playerContainer">
+                <div class="albumArt">
+                    <i class="fa fa-music"></i>
+                </div>
+
+                <div class="info">
+                    <div class="audioName">
+                        <marquee id="fileName"></marquee>
+                    </div>
+                    <div class="seekBar">
+                        <span class="outer">
+                            <span class="inner"></span>
+                        </span>
+                    </div>
+                    <div class="timing">
+                        <span class="start">0.00</span>
+                        <span class="end">0.00</span>
+                    </div>
+                </div>
+
+                <div class="volumeControl">
+                    <div class="wrapper">
+                        <i class="fa fa-volume-up"></i>
+                        <span class="outer">
+                            <span class="inner"></span>
+                        </span>
+                    </div>
+                </div>
+
+                <button class="btn play">
+                    <i class="fa fa-play"></i>
+                    <i class="fa fa-pause"></i>
+                </button>
+
+                <audio class="audio">
+                    <source id="audioName" src="audio/Cher-Believe.mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7486895865.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
